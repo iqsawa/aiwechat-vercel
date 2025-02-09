@@ -55,7 +55,7 @@ func GetWxSubscribeReply() string {
 func GetWxHelpReply() string {
 	helpMsg := os.Getenv(Wx_Help_Reply_key)
 	if helpMsg == "" {
-		helpMsg = "欢迎关注 青松awa ~\n我已成功接入智谱清言AI，有问题可以直接问我哦~\n输入/prompt * 可以设置提示词~\n(●'◡'●)"
+		helpMsg = "欢迎关注 青松awa ~\n我已接入智谱清言AI，有问题可以问我哦(●'◡'●)~\n如果需要自定义提示词请输入/prompt *\n\n(●'◡'●)"
 	}
 	return strings.ReplaceAll(helpMsg, "\\n", "\n")
 }
